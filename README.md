@@ -5,6 +5,9 @@
 ## SETUP !!!
 ![image](https://user-images.githubusercontent.com/17770267/176598473-d1bb81d3-0320-4cf8-8ffa-71a59ccf105f.png)
 
+####THERE IS NO INSTALL !!! ALL THE CONTENT OF THE ENCODER REFERS TO THE FOLDER WHERE THE EXECUTABLE IS ! 
+####TO INSTALL, PUT THE FOLDER WHERE YOU WANT TO INSTALL (I like directly on the C drive myself : C:/MASSIE_VFX_OPEN_MEDIA_ENCODER/).
+
 You can just launch the executable file to be prompted with the setup you want to apply.
 
 ![image](https://user-images.githubusercontent.com/17770267/176598623-46e9b234-c918-49f3-8f45-084da51425c0.png)
