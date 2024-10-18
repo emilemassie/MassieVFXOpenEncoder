@@ -1,21 +1,30 @@
-# MASSIE VFX OPEN MEDIA ENCODER
+# Massie VFX Open Media Encoder
 
-![image](https://user-images.githubusercontent.com/17770267/176597758-95d78722-1acf-44fe-99d5-77264a8942ae.png)
+![Massie VFX Open Media Encoder](https://user-images.githubusercontent.com/17770267/176597758-95d78722-1acf-44fe-99d5-77264a8942ae.png)
 
-## SETUP !!!
-![image](https://user-images.githubusercontent.com/17770267/176598473-d1bb81d3-0320-4cf8-8ffa-71a59ccf105f.png)
+## Setup
 
-#### THERE IS NO INSTALL !!! ALL THE CONTENT OF THE ENCODER REFERS TO THE FOLDER WHERE THE EXECUTABLE IS ! 
-#### TO INSTALL, PUT THE FOLDER WHERE YOU WANT TO INSTALL (I like directly on the C drive myself : C:/MASSIE_VFX_OPEN_MEDIA_ENCODER/).
+![Setup Instructions](https://user-images.githubusercontent.com/17770267/176598473-d1bb81d3-0320-4cf8-8ffa-71a59ccf105f.png)
 
-You can just launch the executable file to be prompted with the setup you want to apply.
+### No Installation Required!
 
-![image](https://user-images.githubusercontent.com/17770267/176598623-46e9b234-c918-49f3-8f45-084da51425c0.png)
+There’s no need to go through a formal installation process. The encoder operates directly from the folder where the executable is located.
 
-The profile folder can also be tweaked to to add new profiles or to organise them better.
+**To get started:**
 
-Once you are happy with the settings, press the green APPLY button to add the needed keys in the windows registery and add the MassieVFX submenu. It should look something like this.
+1. Place the folder in any location you prefer. (For convenience, you might choose something like `C:/Massie_VFX_Open_Media_Encoder/`.)
+2. Simply launch the executable to access the setup options.
 
-![image](https://user-images.githubusercontent.com/17770267/176596287-5a104792-f188-4592-8565-0fc5565526f1.png)
+![Executable Setup](https://user-images.githubusercontent.com/17770267/176598623-46e9b234-c918-49f3-8f45-084da51425c0.png)
 
-Any of those option will then launch a proper FFMPEG terminal that encodes the file requested in the format requested!
+### Customizing Profiles
+
+You can customize or add new profiles by modifying the `Profiles` folder to better suit your workflow.
+
+### Apply Settings
+
+Once you're satisfied with the setup, click the green **Apply** button. This will update the Windows registry and create a MassieVFX submenu, as shown below:
+
+![MassieVFX Submenu](https://user-images.githubusercontent.com/17770267/176596287-5a104792-f188-4592-8565-0fc5565526f1.png)
+
+Each option in the submenu will launch an FFMPEG terminal, encoding the selected file in the specified format.
