@@ -15,11 +15,11 @@ There’s no need to go through a formal installation process. The encoder opera
 1. Place the folder in any location you prefer. (For convenience, you might choose something like `C:/Massie_VFX_Open_Media_Encoder/`.)
 2. Simply launch the executable to access the setup options.
 
-![Executable Setup](https://user-images.githubusercontent.com/17770267/176598623-46e9b234-c918-49f3-8f45-084da51425c0.png)
 
 ### Customizing Profiles
 
 You can customize or add new profiles by modifying the `Profiles` folder to better suit your workflow.
+![Executable Setup](https://user-images.githubusercontent.com/17770267/176598623-46e9b234-c918-49f3-8f45-084da51425c0.png)
 
 ### Apply Settings
 
