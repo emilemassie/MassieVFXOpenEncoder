@@ -19,6 +19,7 @@ There’s no need to go through a formal installation process. The encoder opera
 ### Customizing Profiles
 
 You can customize or add new profiles by modifying the `Profiles` folder to better suit your workflow.
+
 ![Executable Setup](https://user-images.githubusercontent.com/17770267/176598623-46e9b234-c918-49f3-8f45-084da51425c0.png)
 
 ### Apply Settings
