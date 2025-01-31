@@ -1,2 +1,7 @@
 
-releases/.DS_Store
+.DS_Store
+build
+dist
+_old
+*.spec
+test_code.py

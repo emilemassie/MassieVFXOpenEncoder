@@ -1,0 +1,12 @@
+{
+    "name": "Prores422 Hq",
+    "ffmpeg_arguments": [
+        "-c:v",
+        "prores_ks",
+        "-profile:v",
+        "3",
+        "-c:a",
+        "copy"
+    ],
+    "extension": ".mov"
+}

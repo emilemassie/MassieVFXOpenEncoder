@@ -1,0 +1,23 @@
+{
+    "name": "Hevc - Nvidia",
+    "ffmpeg_arguments": [
+        "-pix_fmt",
+        "yuv420p",
+        "-c:a",
+        "aac",
+        "-b:a",
+        "128k",
+        "-c:v",
+        "hevc_nvenc",
+        "-rc",
+        "constqp",
+        "-cq",
+        "#quality#",
+        "-preset",
+        "slow",
+        "-vsync",
+        "2"
+    ],
+    "extension": ".mov",
+    "quality":"6"
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Prores444 10Bit Video Range",
+    "ffmpeg_arguments": [
+        "-map_metadata",
+        "0",
+        "-pix_fmt",
+        "yuv422p10le",
+        "-c:a",
+        "copy",
+        "-c:v",
+        "prores_ks",
+        "-profile:v",
+        "4"
+    ],
+    "extension": ".mov"
+}

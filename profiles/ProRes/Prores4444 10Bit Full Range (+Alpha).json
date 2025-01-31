@@ -1,0 +1,15 @@
+{
+    "name": "Prores4444 10Bit Full Range (+Alpha)",
+    "ffmpeg_arguments": [
+        "-pix_fmt",
+        "yuv444p10",
+        "-c:v",
+        "prores_ks",
+        "-profile:v",
+        "4",
+        "-vendor",
+        "ap10",
+        "-an"
+    ],
+    "extension": ".mov"
+}

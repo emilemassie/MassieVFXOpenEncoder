@@ -1,0 +1,20 @@
+{
+    "name": "Prores444 10Bit Full Range",
+    "ffmpeg_arguments": [
+        "-map_metadata",
+        "0",
+        "-pix_fmt",
+        "yuv444p10le",
+        "-c:a",
+        "copy",
+        "-c:v",
+        "prores_ks",
+        "-profile:v",
+        "4",
+        "-movflags",
+        "write_colr",
+        "-color_range",
+        "pc"
+    ],
+    "extension": ".mov"
+}

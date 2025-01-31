@@ -1,0 +1,12 @@
+{
+    "name": "Extract Sound To Wav",
+    "ffmpeg_arguments": [
+        "ffmpeg.exe",
+        "-v",
+        "quiet",
+        "-stats",
+        "-i",
+        "%%a"
+    ],
+    "extension": ".mov"
+}
