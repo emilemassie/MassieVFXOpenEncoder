@@ -1,6 +1,9 @@
 # Massie VFX Open Media Encoder
 
-![image](https://github.com/user-attachments/assets/e6034e9e-702f-41ff-841e-153a149e83f0)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e3b7452d-4b82-46cc-83ab-ce88fe3e0d30" />
+  <img src="https://github.com/user-attachments/assets/25e1891e-804a-4fc3-94c2-4827777b46e7" />
+</p>
 
 ## Setup
 There’s no need to go through a formal installation process. The encoder operates directly from the folder where the executable is located.
