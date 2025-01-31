@@ -12,7 +12,7 @@
         "-rc",
         "constqp",
         "-cq",
-        "#quality#",
+        "#prompt#",
         "-preset",
         "slow",
         "-vsync",
