@@ -377,7 +377,6 @@ class MASSIEVFX_OPEN_MEDIA_ENCODER(QMainWindow):
 
         self.showOkAnim()
 
-
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     if len(sys.argv) < 2:
