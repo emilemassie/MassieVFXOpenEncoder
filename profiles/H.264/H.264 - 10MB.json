@@ -1,5 +1,5 @@
 {
-    "name": "H.264 - Targetsize",
+    "name": "H.264",
     "ffmpeg_arguments": [
         "-pix_fmt",
         "yuv420p",
@@ -17,5 +17,5 @@
         "128k"
     ],
     "extension": ".mov",
-    "max_file_size": "20"
+    "max_file_size": "10"
 }

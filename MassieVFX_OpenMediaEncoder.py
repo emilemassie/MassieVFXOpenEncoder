@@ -43,6 +43,7 @@ class FFmpegWorker(QtCore.QThread):
     progress = QtCore.pyqtSignal(int, float)
     finished = QtCore.pyqtSignal()
     log_update = QtCore.pyqtSignal(str)  # Signal to update the log
+    sent_message_box = QtCore.pyqtSignal(str,str) 
 
     def __init__(self, input_files, output_file, profile, parent):
         super().__init__()
@@ -52,6 +53,8 @@ class FFmpegWorker(QtCore.QThread):
         self.profile = profile 
         self.ffmpeg_exec = get_ffmpeg_exec()
         self.is_running = True
+        self.paused = False
+        self.prompt_value = None
 
     def run(self):
         # Set the creation flags to avoid a popup window on Windows
@@ -81,6 +84,25 @@ class FFmpegWorker(QtCore.QThread):
                 if a[i] == '#quality#':
                     quality = self.profile['quality']
                     a[i] = str(int(quality))
+        if 'prompt' in self.profile.keys():
+            a = self.profile['ffmpeg_arguments']
+            for i in range(len(a)):
+                if a[i] == '#prompt#':
+                    prompt = self.profile['prompt']
+                    self.paused = True
+                    self.sent_message_box.emit(prompt[0],prompt[1])
+                    while self.paused:
+                        pass
+                    value = self.prompt_value
+                    if value:
+                        print(value)
+                        a[i] = str(int(value))
+                        wait = False
+                    else:
+                        print('passing')
+                        a[i] = str(int(prompt[1]))
+                        
+        
 
         cmd += self.profile['ffmpeg_arguments']
         cmd.append(f'{self.output_file}')
@@ -140,7 +162,7 @@ class MVFX_FFMPEG_ENCODER(QMainWindow):
     def get_profile(self,profile):
         with open(profile) as json_file:
             config = json.load(json_file)
-        return  config
+        return config
 
     def EncodeWithConfig(self, file, profile):
         arguments = profile['ffmpeg_arguments']
@@ -151,9 +173,21 @@ class MVFX_FFMPEG_ENCODER(QMainWindow):
         
         self.worker = FFmpegWorker(file, new_file_name, profile, self)
         self.worker.progress.connect(self.update_progress)
+        self.worker.sent_message_box.connect(self.show_msg_box)
         self.worker.finished.connect(self.on_finished)
         self.worker.log_update.connect(self.update_logs)  # Connect log update signal
         self.worker.start()
+    
+    def show_msg_box(self, message, default = ''):
+        self.worker.prompt_value = None
+        text, okPressed = QtWidgets.QInputDialog.getText(None, "Get text", message, text=default)   
+        if okPressed and text != '':
+            self.worker.prompt_value = str(int(text))
+            self.worker.paused = False
+            return 
+        else:
+            self.worker.prompt_value = None
+            self.worker.paused = False
 
     def update_progress(self, frame, progress):
         # Update the progress bar based on the number of frames processed

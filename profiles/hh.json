@@ -12,12 +12,12 @@
         "-rc",
         "constqp",
         "-cq",
-        "#quality#",
+        "#prompt#",
         "-preset",
         "slow",
         "-vsync",
         "2"
     ],
     "extension": ".mov",
-    "prompt": ["Quality ?","5"]
+    "prompt": ["Quality ?","10"]
 }
