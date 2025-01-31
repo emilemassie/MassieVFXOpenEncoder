@@ -8,6 +8,7 @@
 ## Setup
 
 <a href="https://github.com/emilemassie/MassieVFXOpenEncoder/releases"><b>[ DOWNLOAD HERE ]</b></a>
+
 There’s no need to go through a formal installation process. The encoder operates directly from the folder where the executable is located.
 
 **To get started:**
